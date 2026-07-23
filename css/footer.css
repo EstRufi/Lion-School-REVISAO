@@ -1,0 +1,43 @@
+:root{
+    --cor-principal: #3347B0;
+    --cor-segundaria: #fafafa;
+
+}
+
+footer{
+    width: 100vw;
+    height: 140px;
+    background-color: var(--cor-principal);
+    color: var(--cor-segundaria);
+    padding: 20px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.telefone, .email, .rua{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.redeSocial{
+    display: flex;
+    gap: 10px;
+}
+
+.redeSocial div{
+    display: flex;
+    padding: 10px;
+    width: 48px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--cor-segundaria);
+    border-radius: 50%;
+}
