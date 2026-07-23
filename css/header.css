@@ -1,0 +1,32 @@
+:root{
+    --cor-principal: #3347B0;
+    --cor-segundaria: #fafafa;
+
+}
+
+header{
+    background-color: var(--cor-principal);
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    padding: 20px 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lion{
+    align-items: center;
+    display: flex;
+    gap: 11px;
+    color: var(--cor-segundaria);
+    font-size: 24px;
+    width: 190px;
+}
+
+.sair{
+    align-items: center;
+    display: flex;
+    gap: 11px;
+    color: var(--cor-segundaria);
+    font-size: 36px;
+}
