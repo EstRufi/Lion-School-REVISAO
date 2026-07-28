@@ -9,18 +9,6 @@ const caregarBotao = async function(){
         return "Erro ao pegar dados"
 }
 
-const criarLista = function(lista){
-    let main = document.getElementById('main')
-    main.replaceChildren()
-    let sair = document.getElementById('sair')
-    sair.onclick = () => caregarBotao()
-
-    let pSigla = document.createElement('p')
-    pSigla.textContent = lista.nome
-
-    main.append(pSigla)
-}
-
 export const criarPagina = async function(cursos){
     let main = document.getElementById('main')
     main.replaceChildren()
@@ -47,15 +35,13 @@ export const criarPagina = async function(cursos){
     const imgMulher = document.createElement('img')
     imgMulher.src = './img/studant.svg'
     imgMulher.className = 'imgMulher'
-
+    
     let divButoes = document.createElement('div')
     divButoes.className = 'botoes'
 
     cursos.forEach(buscaCursos => {
         let bntCursos = document.createElement('button')
         bntCursos.className = 'bntCursos'
-
-        bntCursos.onclick = () => criarLista(buscaCursos)
         
         let imgIcon = document.createElement('img')
         imgIcon.src = buscaCursos.icon
