@@ -1,0 +1,63 @@
+:root{
+    --cor-principal: #3347B0;
+    --cor-segundaria: #fafafa;
+    --cor-texto: #000000;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+.principal{
+    display: flex;
+    height: 460px;
+    gap: 30px;
+}
+
+.escolhaCurso{
+    font-size: 23px;
+    width: 451px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.escolhaCurso img{
+    width: 436px;
+}
+
+.imgMulher{
+    padding-bottom: 10px;
+    width: 257px;
+}
+
+.botoes{
+    display: flex;
+    height: 462px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bntCursos{
+    width: 400px;
+    height: 200px;
+    background-color: var(--cor-principal);
+    color: var(--cor-segundaria);
+    font-size: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    border: none;
+    box-shadow: 15px 12px 5px 2px #7484d3;
+}
+
+.bntCursos img{
+   width: 96px;
+   height: 100px; 
+   filter: invert(100%);
+}

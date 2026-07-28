@@ -4,3 +4,10 @@
     box-sizing: border-box;
     font-family: "Roboto";
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
