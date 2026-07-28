@@ -8,3 +8,9 @@ export async function getCursos(){
     return data
 
 }
+
+export async function getAlunos(){
+    const response = await fetch(`${url}alunos`)
+    const data = await response.json()
+    return data
+}
