@@ -1,13 +1,24 @@
-import { getAlunos } from "./methods.js";
+import { getAlunoscurso } from "./methods.js";
 
-const carregarLista = async function(){
-    const dados = await getAlunos
+export const carregarLista = async function(){
+    const dados = await getAlunoscurso()
 
     if(dados){
-        criarLista(dados)
+        return criarLista(dados)
     }
     else
         return "Parabéns vc quebro o bagulho"
 }
 
-const criarLista = async function(infoAlunos){}
+export const criarLista = function(infoAlunos){
+    const main = document.getElementById('main')
+    main.replaceChildren()
+
+
+    let h1NomeCurso = document.createElement('h1')
+    h1NomeCurso.textContent = infoAlunos.nome
+    
+    main.append(h1NomeCurso)
+}
+
+carregarLista()

@@ -1,6 +1,7 @@
-import { getCursos } from "./methods.js";
+import { carregarLista } from "./listaAlunos.js";
+import { getAlunoscurso, getCursos } from "./methods.js";
 
-const caregarBotao = async function(){
+export const caregarBotao = async function(){
     const dados = await getCursos()
     if(dados){
         criarPagina(dados)
@@ -9,7 +10,7 @@ const caregarBotao = async function(){
         return "Erro ao pegar dados"
 }
 
-export const criarPagina = async function(cursos){
+export const criarPagina = function(cursos){
     let main = document.getElementById('main')
     main.replaceChildren()
 
@@ -43,6 +44,17 @@ export const criarPagina = async function(cursos){
         let bntCursos = document.createElement('button')
         bntCursos.className = 'bntCursos'
         
+        bntCursos.addEventListener('click', () => {
+    
+            const levaInfo ={
+                "id":buscaCursos.id
+            }
+            let oi = carregarLista(levaInfo)
+            return oi
+
+             
+        })
+
         let imgIcon = document.createElement('img')
         imgIcon.src = buscaCursos.icon
 
