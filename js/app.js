@@ -1,11 +1,11 @@
 'use strict'
 
-import { criarPagina } from "./curso.js"
+import { caregarBotao } from "./curso.js"
 
 
 
 async function inicializar(){
-    criarPagina()
+    caregarBotao()
 }
 
 inicializar()

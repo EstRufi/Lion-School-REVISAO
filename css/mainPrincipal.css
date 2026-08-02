@@ -4,7 +4,7 @@
     --cor-texto: #000000;
 }
 
-main{
+main.mainPrincipal{
     display: flex;
     width: 100vw;
     

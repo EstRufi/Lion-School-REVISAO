@@ -12,6 +12,7 @@ export const caregarBotao = async function(){
 
 export const criarPagina = function(cursos){
     let main = document.getElementById('main')
+    main.className = 'mainPrincipal'
     main.replaceChildren()
 
     let divPrincipal = document.createElement('div')
@@ -44,15 +45,13 @@ export const criarPagina = function(cursos){
         let bntCursos = document.createElement('button')
         bntCursos.className = 'bntCursos'
         
-        bntCursos.addEventListener('click', () => {
+        bntCursos.addEventListener('click',async () => {
     
             const levaInfo ={
-                "id":buscaCursos.id
+                "id":buscaCursos.id,
+                "nome":buscaCursos.nome
             }
-            let oi = carregarLista(levaInfo)
-            return oi
-
-             
+            await carregarLista(levaInfo)
         })
 
         let imgIcon = document.createElement('img')
@@ -69,5 +68,3 @@ export const criarPagina = function(cursos){
     divPrincipal.append(divEscolhaCurso,imgMulher,divButoes)
     main.appendChild(divPrincipal)
 }
-
-caregarBotao()

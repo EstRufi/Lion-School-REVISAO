@@ -13,7 +13,6 @@ export async function getCursos(){
 
 export async function getAlunoscurso(idCurso){
     const response = await fetch(`${url}alunos?curso_id=${idCurso}`)
-    console.log(response)
     const data = await response.json()
     return data
 }
