@@ -3,3 +3,21 @@ main.mainLista{
     width: 100vw;
     height: 100vh;
 }
+
+.navLista{
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    flex-direction: row;
+    background-color: #c32323;
+}
+
+.escolhaStatus{
+    background-color: #322c2c;
+}
+
+.legenda{
+    background-color: #322c2c;
+    display: flex;
+    
+}

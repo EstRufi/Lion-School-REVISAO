@@ -6,7 +6,7 @@
     <title>Line School</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./imports.css">
-    <script src="./js/app.js" defer type="module"></script>
+    <!-- <script src="./js/app.js" defer type="module"></script> -->
 </head>
 <body>
     <header>
@@ -20,7 +20,26 @@
         </div>
     </header>
     <main id="main">
+        <nav class="navLista">
+            <form>
+                <p>Status</p>
+                <select class="escolhaStatus">
+                    <option>Status</option>
+                    <option>Finalizado</option>
+                    <option>Cursando</option>
+                </select>
+            </form>
 
+            <div class="legenda">
+                <span>Legenda</span>
+
+                <div class="cursando"></div>
+                <p>Cursando</p>
+
+                <div class="finalizado"></div>
+                <p>Finalizado</p>
+            </div>
+        </nav>
     </main>
     <footer>
         <div class="contatos">
