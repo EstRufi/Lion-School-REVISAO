@@ -1,10 +1,12 @@
 main.mainLista{
+    
     background-color: #c32323;
     width: 100vw;
     height: 100vh;
 }
 
 .navLista{
+
     display: flex;
     width: 100vw;
     height: 50px;
@@ -13,10 +15,12 @@ main.mainLista{
 }
 
 .escolhaStatus{
+
     background-color: #9d8383;
 }
 
 .legenda{
+
     background-color: #322c2c;
     display: flex;
     
